@@ -1,0 +1,51 @@
+1.Import the sales data into R
+R script
+
+2.Create a plot of sales, TV investment and Digital investment
+sales_vs_investments.png saved to directory as specified by 'my_dir'
+
+3.Report the correlations among Sales, TV and Digital investment
+The correlation between Sales and Digital Investment being 0.66 is the most significant and the 
+correlation between Sales and TV Investment being 0.44 is a bit less significant.
+On the other hand there is little correlation between TV Investment and Digital Investment.
+
+4.Fit a regression model to data
+R script
+
+4a.Report on the adjusted R-squared
+The adjusted R-squared value of 0.5586161 suggests that the model can explain about 56% of the 
+variance in the Sales value can be explained by the regressors. 
+The regression model is of some value but there are still some unexplained variances. 
+A plot of the residuals shows a trend of increasing residuals with some seasonality.
+
+4b.Report the p-value and significance of each regressor
+The p values of the intercept is 6.72e-7 and 
+the p value of the digital spend is 1.62e-4 and 
+the p value of the TV spend is 9.75e-3. 
+They are all less than 0.05 and hence all regressors are highly significant so that it is quite unlikely that 
+the sales value is not correlated with these regressors with the likelihoods being the respective p values.
+
+5.Calculate the contribution from TV Spend to sales in % and absolute dollar value
+As computed in the R script the contribution from TV spend is around 16.6%.
+In absolute dollar value the contribution from TV spend is $44,108,224
+
+6.Calculate the TV return on investment (ROI)
+The TV ROI = (TV_contribution - TV_investment) / TV_investment 
+		   = (44108224 - 25473374) / 25473374 
+		   = 0.7315423
+
+7.Using the planned spend values for the first 3 months of 2018 and your regressions model, 
+	calculate the expected sales value for the first 3 months of 2018
+The expected sales values for the first 3 months of 2018 are 8334056, 9082486 and 10892394
+
+8.In your opinion what additional data would improve your model and why?
+Firstly the overall economic performance and the trends and seasonality of the industry would be of interest as 
+the individual company's performance would be affected by the environment/economic factors. 
+From the dataset there seems to be a trend of growth with seasonality effects during Christmas period.
+Furthermore if there are other marketing media being used besides TV and digital, those should be taken into account as well.
+More importantly the number of distributors, pricing and promotions and the competitor's prices would all be 
+possible additional regressors as these factors would influence the consumers' behaviour. 
+
+
+
+
